@@ -22,6 +22,10 @@ export const Testimonials: CollectionConfig = {
       name: "businessLink",
       type: "text",
     },
+    {
+      name: "image",
+      type: "upload",
+      relationTo: "media",
+    },
   ],
-  upload: true,
 };
