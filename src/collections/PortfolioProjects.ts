@@ -1,11 +1,17 @@
 import { CollectionConfig } from "payload/types";
 
 export const PortfolioProjects: CollectionConfig = {
-  slug: "portoflio-projects",
+  slug: "portfolio-projects",
   access: {
     read: () => true,
   },
   fields: [
+    {
+      name: "slug",
+      type: "text",
+      label: "slug",
+      required: true,
+    },
     {
       name: "projectName",
       type: "text",
@@ -70,7 +76,7 @@ export const PortfolioProjects: CollectionConfig = {
       ],
     },
     {
-      name: "problemStatment",
+      name: "problemStatement",
       type: "text",
       label: "Problem Statement",
       required: true,
